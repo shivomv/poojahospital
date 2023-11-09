@@ -128,7 +128,7 @@ Version:	1.1
 		=================================*/ 
 		$('.portfolio-slider').owlCarousel({
 			autoplay:true,
-			autoplayTimeout:4000,
+			autoplayTimeout:3000,
 			margin:15,
 			smartSpeed:300,
 			autoplayHoverPause:true,
@@ -149,14 +149,6 @@ Version:	1.1
 					items:4,
 				},
 			}
-		});
-		
-		/*=====================================
-			Counter Up JS
-		======================================*/
-		$('.counter').counterUp({
-			delay:20,
-			time:2000
 		});
 		
 		/*===============================
