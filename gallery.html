@@ -87,17 +87,31 @@
                             <div class="main-menu">
                                 <nav class="navigation">
                                     <ul class="nav menu">
-                                        <li><a href="index.html">Home</a> </li>
-                                        <li  class="active"><a href="about.html">About Us </a></li>
+                                        <li class="active"><a href="index.html">Home</a>
                                         <li><a href="speciality.html">Specialities</a></li>
-
+                                        <li><a href="#">Gallery<i class="icofont-rounded-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="gallery.html#photos">Photo Gallery</a></li>
+                                                <li><a href="gallery.html#videos">Video Gallery</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="#">Blogs<i class="icofont-rounded-down"></i></a>
                                             <ul class="dropdown">
                                                 <li><a href="blog.html">Health Blogs</a></li>
                                                 <!-- <li><a href="blog-single.html">Blogs</a></li> -->
                                             </ul>
                                         </li>
+                                        <li><a href="#">About Us<i class="icofont-rounded-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="about.html#overview">Overview</a></li>
+                                                <li><a href="about.html#doctors">Our Doctors</a></li>
+                                                <li><a href="about.html#message">Chairman Message</a></li>
+                                                <li><a href="about.html#Journey">Our Journey</a></li>
+                                            </ul>
+                                        </li>
+                                        </li>
                                         <li><a href="contact.html">Contact Us</a></li>
+
                                     </ul>
                                 </nav>
                             </div>
@@ -116,28 +130,37 @@
         <!--/ End Header Inner -->
     </header>
     <!-- End Header Area -->
-
-    <!-- About section body start -->
     <!-- Breadcrumbs -->
     <div class="breadcrumbs overlay">
         <div class="container">
-            <div class="bread-inner">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>About Us</h2>
-                        <ul class="bread-list">
-                            <li><a href="index.html">Home</a></li>
-                            <li><i class="icofont-simple-right"></i></li>
-                            <li class="active">About us</li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="bread-inner">
+            <div class="row">
+              <div class="col-12">
+                <h2>Gallery</h2>
+                <ul class="bread-list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><i class="icofont-simple-right"></i></li>
+                  <li class="active">Gallery</li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- End Breadcrumbs -->
+      </div>
+      <!-- End Breadcrumbs -->
+    <!--gallery Body -->
+    <!-- photos  -->
+    <div class="container my-5" id="photos">
+        <h3  class="my-4 " style="border-bottom: 2px solid #1A76D1;">Featured Photos</h3>
 
-    <!-- About section body End -->
+    </div>
+    <hr>
+    <!-- videos  -->
+    <div class="container my-5" id="videos">
+        <h3  class="my-4 " style="border-bottom: 2px solid #1A76D1;">Featured Videos</h3>
+
+    </div>
+    <!-- End gallery body  -->
 
     <!-- Footer Area -->
     <footer id="footer" class="footer ">
@@ -266,7 +289,6 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
