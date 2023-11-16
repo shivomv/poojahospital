@@ -1902,6 +1902,9 @@ pre code {
     .table-responsive-md.table-bordered {
         border: 0
     }
+    .logo img{
+	width: 10em;
+}
 }
 
 @media (max-width:991px) {
@@ -8649,4 +8652,3 @@ a.text-dark:hover {
 }
 
 
-/*# sourceMappingURL=bootstrap.min.css.map */
