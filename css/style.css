@@ -3847,7 +3847,7 @@ body{
 .footer .footer-top{
 	padding:100px 0px;
 	position:relative;
-	background:var(--primary-color);
+	background:var(--info);
 }
 .footer .footer-top:before{
 	position:absolute;
@@ -4027,7 +4027,7 @@ body{
 	color:#2C2D3F;
 }
 .footer .copyright{
-	background:var(--primary-color);
+	background:var(--info);
 	padding:25px 0px 25px 0px;
 	text-align:center;
 }
