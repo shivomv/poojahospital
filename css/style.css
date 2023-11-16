@@ -48,7 +48,7 @@ body{
 	color:#888;
 }
 :root{
-	--primary-color: #1A76D1;
+	--primary-color: #005DE9;
 
 
 }
@@ -304,9 +304,9 @@ body{
 	float: left;
 	margin-top: 18px;
 }
-.logo img{
+/* .logo img{
 	filter: drop-shadow(0px 0px 1px var(--primary-color));
-}
+} */
 .header .navbar {
 	background: none;
 	box-shadow: none;
@@ -1058,7 +1058,7 @@ body{
 	Start Call to action CSS
 =================================*/
 .call-action{
-	background-image:url('img/call-bg.jpg');
+	background-image:url('../img/call-bg.jpg');
 	background-size:cover;
 	background-position:center;
 	position:relative;
@@ -1365,7 +1365,7 @@ body{
 	Start Testimonials CSS
 ===============================*/
 .testimonials{
-	background-image:url('img/testi-bg.jpg');
+	background-image:url('../img/testi-bg.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -1667,7 +1667,7 @@ body{
 	Start Clients CSS
 ==========================*/
 .clients{
-	background-image:url('img/client-bg.jpg');
+	background-image:url('../img/client-bg.jpg');
 	background-size:cover;
 	background-position:center;
 	padding:100px 0px;
@@ -1688,7 +1688,7 @@ body{
 	Start Team CSS
 ======================*/ 
 .team{
-	background-image:url('img/testi-bg.jpg');
+	background-image:url('../img/testi-bg.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -1970,6 +1970,7 @@ body{
 	padding: 30px;
 	left: 0;
 	z-index: 0;
+	min-height: 210px;
 }
 .blog .single-news .news-content:before{
 	position:absolute;
@@ -2315,7 +2316,7 @@ body{
 }
 /* Blockqoute */
 .news-single blockquote {
-	background-image: url('img/blockqoute-bg.jpg');
+	background-image: url('../img/blockqoute-bg.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
