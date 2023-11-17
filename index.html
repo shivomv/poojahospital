@@ -70,7 +70,7 @@
 	<!-- End Preloader -->
 
 	<!-- Header Area -->
-	<header class="header">
+	<header class="header" style="z-index: 1000;">
 		<!-- Header Inner -->
 		<div class="header-inner">
 			<div class="container">
@@ -93,16 +93,12 @@
 									<ul class="nav menu">
 										<li class="active"><a href="index.html">Home</a>
 											<li><a href="index.html#speciality">Specialities</a></li>
-											<li><a href="#">Gallery<i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="index.html#photogallery">Photo Gallery</a></li>
-													<li><a href="#">Video Gallery</a></li>
-												</ul>
+											<li><a href="index.html#photogallery">Gallery</a>
 											</li>	
 										<li><a href="#">Blogs<i class="icofont-rounded-down"></i></a>
 											<ul class="dropdown">
 												<li><a href="index.html#blog">Health Blogs</a></li>
-												<!-- <li><a href="blog-single.html">Blogs</a></li> -->
+												<!-- <li><a href="#">News Blogs</a></li> -->
 											</ul>
 										</li>
 										<li><a href="#">About Us<i class="icofont-rounded-down"></i></a>
@@ -281,7 +277,6 @@
 					<div class="choose-left">
 						<h3>Who We Are</h3>
 						<p>At <strong>Pooja Hospital</strong>, we are dedicated to providing exceptional healthcare services. Our commitment is to prioritize your well-being through compassionate care and innovative treatments.</p>
-						<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 						<div class="row">
 							<div class="col-lg-6">
 								<ul class="list">
@@ -443,7 +438,7 @@
 				<div class="col-lg-4 col-md-6 col-12">
 					<!-- Start Single Service -->
 					<div class="single-service">
-						<i class="icofont-medical-sign"></i>
+						<i><img src="img/urology.png" width="45" alt="Urology" style="filter: drop-shadow(0px 0px 0px #005de9);"></i>
 						<h4><a href="service-details.html">Urology</a></h4>
 						<p>All minimally invasive & non-invasive treatment options like trans urethral treatment for prostate & bladder tumour, bladder stones and urethric stones is available. </p>
 					</div>
@@ -461,7 +456,7 @@
 				<div class="col-lg-4 col-md-6 col-12">
 					<!-- Start Single Service -->
 					<div class="single-service">
-						<i class="icofont-surgeon-alt"></i>
+						<i><img src="img/surgery.png" width="45" alt="Surgery" style="filter: drop-shadow(0px 0px 0px #005de9);"></i>
 						<h4><a href="service-details.html">General Surgery</a></h4>
 						<p>Discover unparalleled excellence in general surgery at our institution, where board-certified surgeons utilize advanced techniques and a patient-focused approach to ensure optimal outcomes and a swift path to recovery. </p>
 					</div>
@@ -479,7 +474,7 @@
 				<div class="col-lg-4 col-md-6 col-12">
 					<!-- Start Single Service -->
 					<div class="single-service">
-						<i class="icofont-medical-sign"></i>
+						<i><img src="img/IVF.png" width="45" alt="Infertility" style="filter: drop-shadow(0px 0px 0px #005de9);"></i>
 						<h4><a href="service-details.html">Infertility</a></h4>
 						<p> Embark on a personalized fertility journey with our expert reproductive specialists. We employ advanced diagnostics and tailored treatments, providing comprehensive support to address infertility challenges and guide you towards achieving a successful and fulfilling conception.</p>
 						
@@ -489,8 +484,8 @@
 				<div class="col-lg-4 col-md-6 col-12">
 					<!-- Start Single Service -->
 					<div class="single-service">
-						<i class="fa fa-solid fa-person-pregnant"></i>
-						<h4><a href="service-details.html">Obsterics</a></h4>
+						<i><img src="img/obstetrics.png" width="45" alt="Obstetrics" style="filter: drop-shadow(0px 0px 0px #005de9);"></i>
+						<h4><a href="service-details.html">Obstetrics</a></h4>
 						<p>Entrust your pregnancy journey to our expert obstetricians who deliver personalized care, guiding you through every stage with precision, compassion, and a commitment to the health and joy of both mother and baby. </p>
 					</div>
 					<!-- End Single Service -->
@@ -628,38 +623,41 @@
 				</div>
 			</div>
 			<div class="row">
+
 				<div class="col-lg-6 col-md-12 col-12">
-					<form class="form" id="contact-form">
+					<p class="text-danger" id="error-msg"></p>
+					<form class="form" id="contact-form" onsubmit="return validateForm()">
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
-									<input name="name" type="text" placeholder="Name" required>
+									<input name="name" type="text" placeholder="Name" required onkeyup="validateName()">
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
-									<input name="phone" type="text" placeholder="Phone" required>
+									<input name="phone" type="text" placeholder="Phone" required onkeyup="validatePhone()">
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
-									<input name="age" type="number" placeholder="Age" required>
+									<input name="age" type="number" placeholder="Age" required onkeyup="validateAge()">
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
-									<input type="text" placeholder="Gender" id="Gender" name="gender" required>
+									<input type="text" placeholder="Gender" id="Gender" name="gender" required onkeyup="validateGender()">
 								</div>
 							</div>
 							<div class="col-lg-12 col-md-12 col-12">
 								<div class="form-group">
 									<textarea name="message" placeholder="Write Your Message Here....." required></textarea>
 									<center>
-										<button type="submit" class="btn btn-primary btn-lg btn-block my-4 w-50" >Submit</button>
+										<button type="submit" class="btn btn-primary btn-lg btn-block my-4 w-50" id="submitBtn" disabled>Submit</button>
 									</center>
 								</div>
 							</div>
 						</div>
+					</form>
 				</div>
 				<div class="col-lg-6 col-md-12 ">
 					<iframe
