@@ -677,6 +677,22 @@ body{
 .owl-item.active .single-slider .button{
     animation: fadeInDown 1s both 1.5s;
 }
+/* slider bg  */
+.single-slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(241, 245, 248, 1),rgb(241, 245, 248, 0.8), rgb(255, 255, 255, 0));
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
 /*===========================
 	End Hero Area CSS
 =============================*/
@@ -4045,3 +4061,4 @@ body{
 /*=========================
 	End Footer CSS
 ===========================*/
+

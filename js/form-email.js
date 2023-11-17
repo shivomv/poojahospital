@@ -1,18 +1,19 @@
 // Validate Data 
 function validateName() {
     var name = document.forms["contact-form"]["name"].value;
-    var nameRegex = /^[A-Za-z]+$/;
+    var nameRegex = /^[A-Za-z\s]+$/;
     var errorElement = document.getElementById("error-msg");
     var submitBtn = document.getElementById("submitBtn");
 
     if (!name.match(nameRegex)) {
-        errorElement.innerText = "Error: Name should only contain letters";
+        errorElement.innerText = "Error: Name should only contain letters and spaces";
         submitBtn.disabled = true;
     } else {
         errorElement.innerText = "";
         submitBtn.disabled = false;
     }
 }
+
 
 function validatePhone() {
     var phone = document.forms["contact-form"]["phone"].value;
