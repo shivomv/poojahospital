@@ -1,11 +1,4 @@
-/* =====================================
-Template Name: 	Mediplus.
-Author Name: Naimur Rahman
-Website: http://wpthemesgrid.com/
-Description: Mediplus - Doctor HTML Template.
-Version:	1.1
-========================================*/   
-/*=======================================
+ /*=======================================
 [Start Activation Code]
 =========================================
 * Sticky Header JS
@@ -301,5 +294,5 @@ Version:	1.1
 		$('.preloader').addClass('preloader-deactivate');
 	});
 	
-	
 })(jQuery);
+
